@@ -1,19 +1,12 @@
 <template>
   <div id="app">
-    <shop shop-title="Smartphone"/>
-    <shop shop-title="Laptop"/>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
-
-<script>
-  import Shop from "./components/Shop";
-
-  export default {
-    components: {
-      Shop
-    }
-  }
-</script>
 
 <style lang="scss">
 #app {
