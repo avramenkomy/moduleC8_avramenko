@@ -1,7 +1,16 @@
 <template>
   <div id="app">
-    <shop shop-title="Smartphone"/>
-    <shop shop-title="Laptop"/>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/todo">Todo</router-link> |
+      <router-link to="/bascket">Bascket</router-link>
+    </div>
+    <router-view/>
+    <!--<div>
+      <shop shop-title="Smartphone"/>
+      <shop shop-title="Laptop"/>
+    </div>-->
   </div>
 </template>
 
